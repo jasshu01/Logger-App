@@ -10,17 +10,15 @@
         android:id="@+id/scrollView2"
         android:layout_width="409dp"
         android:layout_height="wrap_content"
+        android:layout_marginTop="176dp"
         android:padding="20dp"
-        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/startCapturing_radiologs"
-        app:layout_constraintVertical_bias="0.084"
+        app:layout_constraintTop_toTopOf="parent"
         tools:ignore="MissingConstraints">
 
         <TextView
-            android:id="@+id/textView_radioLogs"
+            android:id="@+id/textView_kernelLogs"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Hello World!"
@@ -32,25 +30,24 @@
     </ScrollView>
 
     <Button
-        android:id="@+id/startCapturing_radiologs"
+        android:id="@+id/startCapturing_kernelLogs"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="56dp"
         android:layout_marginEnd="2dp"
         android:text="Start"
-        app:layout_constraintEnd_toStartOf="@+id/stopCapturing_radiologs"
+        app:layout_constraintEnd_toStartOf="@+id/stopCapturing_kernelLogs"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
     <Button
-        android:id="@+id/stopCapturing_radiologs"
+        android:id="@+id/stopCapturing_kernelLogs"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="58dp"
         android:layout_marginEnd="23dp"
         android:text="Stop"
-        app:layout_constraintBottom_toBottomOf="@+id/startCapturing_radiologs"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toEndOf="@+id/startCapturing_radiologs"
+        app:layout_constraintStart_toEndOf="@+id/startCapturing"
         app:layout_constraintTop_toTopOf="parent" />
 </androidx.constraintlayout.widget.ConstraintLayout>

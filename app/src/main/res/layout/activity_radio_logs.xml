@@ -4,11 +4,37 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity">
+    tools:context=".RadioLogs">
+
+
+    <!--    <ScrollView-->
+    <!--        android:layout_width="match_parent"-->
+    <!--        android:layout_height="wrap_content"-->
+    <!--        app:layout_constraintBottom_toBottomOf="parent"-->
+    <!--        app:layout_constraintEnd_toEndOf="parent"-->
+    <!--        app:layout_constraintStart_toStartOf="parent"-->
+    <!--        app:layout_constraintTop_toBottomOf="@+id/startCapturing_radiologs"-->
+
+
+    <!--        tools:ignore="MissingConstraints">-->
+
+
+<!--    <TextView-->
+<!--        android:id="@+id/textView_radioLogs"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:background="#DD9C9C"-->
+<!--        android:text="Hello World!"-->
+<!--        app:layout_constraintBottom_toBottomOf="parent"-->
+<!--        app:layout_constraintEnd_toEndOf="parent"-->
+<!--        app:layout_constraintStart_toStartOf="parent"-->
+<!--        app:layout_constraintTop_toTopOf="parent" />-->
+
+    <!--    </ScrollView>-->
 
     <ScrollView
         android:id="@+id/scrollView2"
-        android:layout_width="409dp"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:padding="20dp"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -16,18 +42,15 @@
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/startCapturing_radiologs"
-        app:layout_constraintVertical_bias="0.084"
+        app:layout_constraintVertical_bias="0.123"
         tools:ignore="MissingConstraints">
 
         <TextView
             android:id="@+id/textView_radioLogs"
-            android:layout_width="wrap_content"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Hello World!"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent" />
+            android:background="#DD9C9C"
+            android:text="Hello World!" />
 
     </ScrollView>
 
@@ -46,7 +69,7 @@
         android:id="@+id/stopCapturing_radiologs"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="58dp"
+        android:layout_marginTop="57dp"
         android:layout_marginEnd="23dp"
         android:text="Stop"
         app:layout_constraintBottom_toBottomOf="@+id/startCapturing_radiologs"

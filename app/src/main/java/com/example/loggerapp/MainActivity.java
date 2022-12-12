@@ -20,7 +20,7 @@ import java.util.logging.Logger;
 public class MainActivity extends AppCompatActivity {
 
 
-    Button adblogs;
+    Button adblogs, kernelLogs, radioLogs;
 
 
     @SuppressLint({"MissingInflatedId", "LocalSuppress"})
@@ -30,14 +30,36 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
 
         adblogs = findViewById(R.id.adblogs);
+        kernelLogs = findViewById(R.id.kernelLogs);
+        radioLogs = findViewById(R.id.radioLogs);
 
         adblogs.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                startActivity(new Intent(MainActivity.this, ADBLogs.class));
+                Log.d("mylogger", "adblogs");
+                Toast.makeText(MainActivity.this, "going to adb logs", Toast.LENGTH_SHORT).show();
+                Intent intent = new Intent(MainActivity.this, ADBLogs.class);
+                startActivity(intent);
             }
         });
-
+        kernelLogs.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Log.d("mylogger", "kernelLogs");
+                Toast.makeText(MainActivity.this, "going to kernelLogs ", Toast.LENGTH_SHORT).show();
+                Intent intent = new Intent(MainActivity.this, KernelLogs.class);
+                startActivity(intent);
+            }
+        });
+        radioLogs.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Log.d("mylogger", "radioLogs");
+                Toast.makeText(MainActivity.this, "going to radioLogs ", Toast.LENGTH_SHORT).show();
+                Intent intent = new Intent(MainActivity.this, RadioLogs.class);
+                startActivity(intent);
+            }
+        });
 
 
     }

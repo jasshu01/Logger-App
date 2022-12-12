@@ -15,4 +15,26 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/kernelLogs"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="2dp"
+        android:layout_marginTop="64dp"
+        android:text="Kernel Logs"
+        app:layout_constraintStart_toStartOf="@+id/adblogs"
+        app:layout_constraintTop_toBottomOf="@+id/adblogs" />
+
+    <Button
+        android:id="@+id/radioLogs"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="6dp"
+        android:layout_marginTop="64dp"
+        android:text="Radio Logs"
+        app:layout_constraintStart_toStartOf="@+id/kernelLogs"
+        app:layout_constraintTop_toBottomOf="@+id/kernelLogs" />
+
+
 </androidx.constraintlayout.widget.ConstraintLayout>
